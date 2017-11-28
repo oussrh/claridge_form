@@ -1,0 +1,245 @@
+body{
+	overflow-x: hidden;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/*Essai Font*/
+@font-face{
+	font-family : "Helvetica Neue Ultra Light";
+	src : url(helveticaUltraLight.otf);
+}
+
+h1.devis{
+	font-size: 2.25em;
+	margin: 0 auto;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h2,h3,h4,h5,p,span{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+img.logo{
+	margin-top: 1.9em;
+	width: 35%;
+	margin-bottom: -2em;
+}
+
+img.logo2{
+	margin-top: 2.5em;
+	width: 50%;
+}
+
+form{
+	margin-bottom: 5em;
+}
+
+h1{
+	text-transform : uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 3.5em;
+	margin-top: 1em;
+}
+
+.header{
+  background: -webkit-linear-gradient(#c4d9c9, transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c4d9c9, transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c4d9c9, transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c4d9c9, transparent); /* Standard syntax */
+  padding-top: 2em;
+  margin-bottom: -2em;
+}
+
+/* Mettre en forme la partie "Informations" avec les deux lignes sur le côté */
+h2 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.8em;
+	text-transform : uppercase;
+    margin-top: 1.87em;
+    margin-bottom: 1.87em;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+h2:before {
+    border-top: 0.1em solid #b2ceb8;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 20px; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+h2 span { 
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+    background: #fff; 
+    padding: 0 20px; 
+}
+
+/* Glyphicon */
+
+.glyphicon-refresh{
+	color: #5d9168;
+}
+
+/* Etoiles formulaires*/
+span.star-red{
+	color: red;
+	padding-right: 0.25em;
+	font-size: 1.15em;
+}
+
+/* Box vertes */
+p, span{
+	font-size: 1.5em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* Pour bien aligner les boutons radios avec le texte */
+span.radio{
+	margin-top: -0.25em;
+	font-size: 1.15em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	
+}
+
+span.prixCheck{
+	margin-top: -0.25em;
+	font-size: 1.15em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	
+}
+
+p.fond-vert{
+	background-color: #f2faf4;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+}
+
+span.petit{
+	font-size: 1.15em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	
+}
+
+/* Prix Option Tableau */
+span.prixOption{
+	color: #5d9168;
+	font-size: 1.5em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	
+}
+
+.bg-horaire{ 
+	height: 275px; 
+	margin: 0 auto;
+}
+
+input, label{
+	font-size: 1.5em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: normal;
+}
+
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;        
+  .box-sizing(border-box); 
+}
+
+p{
+	font-weight: normal;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+p.uppercase{
+	text-transform: uppercase;
+	
+}
+
+p.glyphicon-refresh{
+	padding-right: 2px;
+	padding-left: 5px;
+}
+
+div.form-entreprise{
+	margin-top: 75px;
+	margin-bottom: -75px;
+}
+
+div.form-options{
+	margin-top: 100px;
+}
+
+div.pdf{
+	margin-top: 50px;
+}
+
+/* Cadre prix total, position fixe */
+#affichesomme{
+	position : fixed ;
+	width: 21.25em;
+	height: 8em;
+	right: 5%;
+	top: 0;	
+	z-index: 1;	
+}
+
+/* Customisation inbox */
+.inbox{
+	background-color: #c4d9c9;
+	padding: 0.5em;
+	positon: relative;
+}
+
+.inbox a{
+	text-decoration: none;
+	color: black;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.inbox a:hover{
+	text-decoration: none;
+	color: black;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+/* Texte Explication Prix Total */
+p#prixTotal{
+	font-size: 0.85em;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: black;
+	margin-bottom: 1em ;
+}
+
+
+
+/*********************/
+
+*{margin:0px;padding:0px;}
+body{margin:0px;
+	padding:0px;}
+
+#looad{	position:fixed;
+		width:100%;
+		height:100%;
+		float:left;
+		margin-bottom:0px;
+		bottom : 0;
+		background:rgba(153,153,153,0.7);
+		z-index:100;
+		visibility:hidden;
+		}
+#gif{
+	width:300px;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:300px;
+	background-image:url(../images/submit-gif.gif)}
